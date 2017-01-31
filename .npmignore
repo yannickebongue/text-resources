@@ -1,0 +1,5 @@
+.idea/
+src/
+
+.gitattributes
+Gruntfile.js
