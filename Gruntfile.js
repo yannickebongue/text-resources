@@ -88,6 +88,30 @@ module.exports = function( grunt ) {
     grunt.loadNpmTasks( "grunt-contrib-copy" );
     grunt.loadNpmTasks( "grunt-contrib-uglify" );
 
-    grunt.registerTask( "default", [ "clean", "copy", "uglify:main", "uglify:dist" ] );
+    grunt.registerTask( "default", [ "clean", "copy", "writeMain", "uglify:main", "uglify:dist" ] );
+
+    grunt.registerTask( "writeMain", function() {
+        var globalVariables = [ "CurrencyNames", "FormatData", "LocaleNames" ];
+        var output = "index.js";
+        var content = "\"use strict\";\n";
+        content += "\n";
+        resourceNames.forEach( function( baseName, i ) {
+            content += "global[ \"" + globalVariables[ i ] + "\" ] = require( \"./lib/" + baseName + "\" );\n";
+        } );
+        content += "\n";
+        resourceNames.forEach( function( baseName ) {
+            var prefix = "lib/" + baseName;
+            var pattern = prefix + "-*.js";
+            grunt.file.expandMapping( pattern ).forEach( function( item ) {
+                var fileName = item.dest;
+                var moduleId = fileName.substring( 0, fileName.lastIndexOf( "." ) );
+                content += "require( \"./" + moduleId + "\" );\n";
+            } );
+        } );
+        if ( grunt.file.exists( output ) ) {
+            grunt.file.delete( output );
+        }
+        grunt.file.write( output, content );
+    } );
 
 };
