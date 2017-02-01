@@ -1,5 +1,7 @@
 # Text Resources
 
+[![npm Version][npm-badge]][npm]
+
 The text-resources is a javascritpt library that provides a set resource bundles for locale-sensitive information such as dates, messages and numbers.
 
 The text-resources library is built on 3 base objects: `CurrencyNames`, `FormatData`, and `LocaleNames`. These base objects are key/value pair where the key is a locale language tag and the value is an object with locale-sensitive information for the language tag.
@@ -25,6 +27,8 @@ The text-resources library is built on 3 base objects: `CurrencyNames`, `FormatD
 ```javascript
 require("text-resources");
 ```
+
+_Note: This call will load the text resources for all the supported language of the current release of this library_
 
 ## Usage
 
@@ -55,3 +59,7 @@ The aim of the text-resources library is to emulate the resources bundle classes
 Copyright (c) 2017 Yannick Ebongue
 
 Released under the MIT License (see [LICENSE.txt](LICENSE.txt))
+
+
+[npm]: https://www.npmjs.org/package/text-resources
+[npm-badge]: https://img.shields.io/npm/v/text-resources.svg?style=flat-square
