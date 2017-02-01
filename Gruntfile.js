@@ -93,15 +93,16 @@ module.exports = function( grunt ) {
     grunt.registerTask( "writeMain", function() {
         var globalVariables = [ "CurrencyNames", "FormatData", "LocaleNames" ];
         var output = "index.js";
-        var content = "\"use strict\";\n";
+        var content = "// THIS IS A GENERATED FILE. DO NOT EDIT IT!!!\n";
+        content += "\"use strict\";\n";
         content += "\n";
         resourceNames.forEach( function( baseName, i ) {
             content += "global[ \"" + globalVariables[ i ] + "\" ] = require( \"./lib/" + baseName + "\" );\n";
         } );
-        content += "\n";
         resourceNames.forEach( function( baseName ) {
             var prefix = "lib/" + baseName;
             var pattern = prefix + "-*.js";
+            content += "\n";
             grunt.file.expandMapping( pattern ).forEach( function( item ) {
                 var fileName = item.dest;
                 var moduleId = fileName.substring( 0, fileName.lastIndexOf( "." ) );
