@@ -9,9 +9,7 @@
 
 } )( this, function( global ) {
 
-    global.CalendarData = {
-        "en": {}
-    };
+    global.CalendarData[ "en" ] = {};
 
     return global.CalendarData;
 

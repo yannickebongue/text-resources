@@ -9,11 +9,9 @@
 
 } )( this, function( global ) {
 
-    global.CalendarData = {
-        "fr": {
-            "firstDayOfWeek": "2",
-            "minimalDaysInFirstWeek": "4"
-        }
+    global.CalendarData[ "fr" ] = {
+        "firstDayOfWeek": "2",
+        "minimalDaysInFirstWeek": "4"
     };
 
     return global.CalendarData;
