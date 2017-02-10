@@ -4,6 +4,7 @@ module.exports = function( grunt ) {
 
     var resourceDir = "src/";
     var resourceNames = [
+        "calendar-data",
         "currency-names",
         "format-data",
         "locale-names"
@@ -91,7 +92,7 @@ module.exports = function( grunt ) {
     grunt.registerTask( "default", [ "clean", "copy", "writeMain", "uglify:main", "uglify:dist" ] );
 
     grunt.registerTask( "writeMain", function() {
-        var globalVariables = [ "CurrencyNames", "FormatData", "LocaleNames" ];
+        var globalVariables = [ "CalendarData", "CurrencyNames", "FormatData", "LocaleNames" ];
         var output = "index.js";
         var content = "// THIS IS A GENERATED FILE. DO NOT EDIT IT!!!\n";
         content += "\"use strict\";\n";
