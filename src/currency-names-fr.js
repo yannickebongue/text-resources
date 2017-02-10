@@ -4,7 +4,7 @@
         global.CurrencyNames = module.require( "./currency-names" );
         module.exports = factory( global );
     } else {
-        factory( global[ "CurrencyNames" ] );
+        factory( global );
     }
 
 } )( this, function( global ) {
