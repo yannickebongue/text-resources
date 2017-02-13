@@ -1,6 +1,6 @@
 {
   "name": "text-resources",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Resource bundles for locale-sensitive information",
   "main": "index.js",
   "scripts": {
