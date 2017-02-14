@@ -1,5 +1,6 @@
-.idea/
-src/
+/.idea/
+/src/
+/test/
 
-.gitattributes
-Gruntfile.js
+/.gitattributes
+/Gruntfile.js
