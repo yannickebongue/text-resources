@@ -1,6 +1,6 @@
-.idea/
-dist/
-lib/
-node_modules/
+/.idea/
+/dist/
+/lib/
+/node_modules/
 
-index.js
+/index.js

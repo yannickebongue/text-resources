@@ -81,15 +81,21 @@ module.exports = function( grunt ) {
             }
         },
 
-        uglify: uglify
+        uglify: uglify,
+
+        qunit: {
+            root: [ "test/unit/index.html" ]
+        }
 
     } );
 
     grunt.loadNpmTasks( "grunt-contrib-clean" );
     grunt.loadNpmTasks( "grunt-contrib-copy" );
+    grunt.loadNpmTasks( "grunt-contrib-qunit" );
     grunt.loadNpmTasks( "grunt-contrib-uglify" );
 
     grunt.registerTask( "default", [ "clean", "copy", "writeMain", "uglify:main", "uglify:dist" ] );
+    grunt.registerTask( "test", [ "qunit" ] );
 
     grunt.registerTask( "writeMain", function() {
         var globalVariables = [ "CalendarData", "CurrencyNames", "FormatData", "LocaleNames" ];
