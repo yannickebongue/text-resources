@@ -1,0 +1,37 @@
+{
+  "name": "text-resources",
+  "description": "Resource bundles for locale-sensitive information",
+  "main": "dist/text-resources.js",
+  "authors": [
+    "Yannick Ebongue <yannickebongue@yahoo.fr>"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "text",
+    "resource",
+    "bundle",
+    "locale",
+    "date",
+    "message",
+    "number",
+    "decimal",
+    "time",
+    "i18n",
+    "java",
+    "properties"
+  ],
+  "homepage": "https://github.com/yannickebongue/text-resources",
+  "ignore": [
+    "**/.*",
+    "lib",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "Gruntfile.js",
+    "index.js"
+  ],
+  "devDependencies": {
+    "qunit": "^2.4.0"
+  }
+}
