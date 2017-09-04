@@ -4,4 +4,5 @@
 /test/
 
 /.gitattributes
+/.travis.yml
 /Gruntfile.js
