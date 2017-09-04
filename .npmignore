@@ -1,6 +1,8 @@
 /.idea/
+/bower_components/
 /src/
 /test/
 
 /.gitattributes
+/.travis.yml
 /Gruntfile.js

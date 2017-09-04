@@ -1,6 +1,6 @@
 # Text Resources
 
-[![npm Version][npm-badge]][npm]
+[![npm version][npm-badge]][npm] [![build status][travis-badge]][travis]
 
 The text-resources is a javascritpt library that provides a set resource bundles for locale-sensitive information such as dates, messages and numbers.
 
@@ -62,4 +62,6 @@ Released under the MIT License (see [LICENSE.txt](LICENSE.txt))
 
 
 [npm]: https://www.npmjs.org/package/text-resources
-[npm-badge]: https://img.shields.io/npm/v/text-resources.svg?style=flat-square
+[npm-badge]: https://img.shields.io/npm/v/text-resources.svg
+[travis]: https://travis-ci.org/yannickebongue/text-resources
+[travis-badge]: https://travis-ci.org/yannickebongue/text-resources.svg
