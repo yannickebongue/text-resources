@@ -68,8 +68,8 @@ module.exports = function( grunt ) {
         pkg: grunt.file.readJSON( "package.json" ),
 
         clean: {
-            dist: "dist/",
-            lib: "lib/"
+            main: [ "lib/" ],
+            dist: [ "dist/", "index.js" ]
         },
 
         copy: {
