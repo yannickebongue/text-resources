@@ -1,6 +1,6 @@
 # Text Resources
 
-[![npm version][npm-badge]][npm] [![build status][travis-badge]][travis]
+[![npm version][npm-badge]][npm] [![build status][travis-badge]][travis] [![dependencies status][david-badge]][david] [![dev dependencies status][david-dev-badge]][david-dev] [![license][license-badge]][license]
 
 The text-resources is a javascritpt library that provides a set resource bundles for locale-sensitive information such as dates, messages and numbers.
 
@@ -62,6 +62,12 @@ Released under the MIT License (see [LICENSE.txt](LICENSE.txt))
 
 
 [npm]: https://www.npmjs.org/package/text-resources
-[npm-badge]: https://img.shields.io/npm/v/text-resources.svg
+[npm-badge]: https://img.shields.io/npm/v/text-resources.svg?style=flat-square
 [travis]: https://travis-ci.org/yannickebongue/text-resources
-[travis-badge]: https://travis-ci.org/yannickebongue/text-resources.svg
+[travis-badge]: https://img.shields.io/travis/yannickebongue/text-resources.svg?style=flat-square
+[david]: https://david-dm.org/yannickebongue/text-resources
+[david-badge]: https://img.shields.io/david/yannickebongue/text-resources.svg?style=flat-square
+[david-dev]: https://david-dm.org/yannickebongue/text-resources?type=dev
+[david-dev-badge]: https://img.shields.io/david/dev/yannickebongue/text-resources.svg?style=flat-square
+[license]: https://opensource.org/licenses/MIT
+[license-badge]: https://img.shields.io/github/license/yannickebongue/text-resources.svg?style=flat-square

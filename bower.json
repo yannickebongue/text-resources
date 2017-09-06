@@ -29,7 +29,8 @@
     "test",
     "tests",
     "Gruntfile.js",
-    "index.js"
+    "index.js",
+    "package.json"
   ],
   "devDependencies": {
     "qunit": "^2.4.0"
